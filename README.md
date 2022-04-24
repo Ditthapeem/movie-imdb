@@ -6,5 +6,5 @@ IMDB Dataset of top 100 movies and tv shows.
 |--------------|---------|---------------|---------|-------|----------|----------|-------|-------|-------|-------|-------|
 
 ## imdb data table
-| Meta_score | No_of_Votes | Certificate | Poster_Link |
-|------------|-------------|-------------|-------------|
+| IMDB_ID | IMDB_Rating | Meta_score | No_of_Votes | Certificate | Poster_Link |
+|---------|-------------|------------|-------------|-------------|-------------|
