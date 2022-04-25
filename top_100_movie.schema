@@ -1,0 +1,26 @@
+
+CREATE TABLE IF NOT EXISTS IMDB (
+    imdb_id         INTEGER PRIMARY KEY,
+    imdb_rating     FLOAT,
+    meta_score      INTEGER,
+    no_of_vote      INTEGER,
+    certificate     TEXT,
+    poster_link     TEXT
+
+);
+
+CREATE TABLE IF NOT EXISTS movie (
+    series_title    TEXT,
+    imdb_id         INTEGER,
+    release_year    INTEGER,
+    runtime         TEXT,
+    genre           TEXT,
+    overview        TEXT,
+    director        TEXT,
+    star1           TEXT,
+    star2           TEXT,
+    star3           TEXT,
+    star4           TEXT,
+    gross           TEXT,
+    FOREIGN KEY(imdb_id) REFERENCES IMDB(imdb_id)
+);
