@@ -143,4 +143,4 @@ class MovieDao(Dao):
         id = imdb_id
         stm = update(model.Movie).where(model.Movie.imdb_id == id[0][0]).values(series_title=title, imdb_id=int(id[0][0]), release_year=int(year), runtime=time, genre=genre, overview=overview, director=director, star1=star1, star2=star2,star3=star3, star4=star4, gross=gross)
         self.session.execute(stm)
-        # f"UPDATE {model.Movie.__tablename__} SET series_title={title}, imdb_id={int(id[0][0])}, release_year={int(year)}, runtime={time}, genre={genre}, overview={overview}, director={director}, star1={star1}, star2={star2},star3={star3}, star4={star4}, gross={gross} WHERE imdb_id={int(id[0][0])}"
+        self.session.commit()

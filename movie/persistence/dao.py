@@ -12,3 +12,7 @@ class Dao(ABC):
     @property
     def session(self):
         return self._session
+
+    @property
+    def commit(self):
+        return self.commit()

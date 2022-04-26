@@ -74,6 +74,7 @@ class IMDBDao(Dao):
         id = imdb_id
         stm = update(model.IMDB).where(model.IMDB.imdb_id == id[0][0]).values(imdb_id=id[0][0], imdb_rating=rate, meta_score=score, no_of_vote=vote, certificate=certificate, poster_link=poster)
         self.session.execute(stm)
+        self.session.commit()
 
     def get_by_id(self, id):
         stm = select(model.IMDB).where(model.IMDB.imdb_id == id)
