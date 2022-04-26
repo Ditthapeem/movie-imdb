@@ -70,85 +70,71 @@ class MovieDao(Dao):
         return result
 
     def get_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_title_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.series_title).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_imdb_id_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.imdb_id).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_released_year_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.release_year).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_runtime_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.runtime).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
     
     def get_genre_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.genre).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
     
     def get_overview_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.overview).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_director_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.director).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
     
     def get_star1_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.star1).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_star2_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.star2).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_star3_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.star3).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_star4_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.star4).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_gross_form_title(self, title):
-        title = title.title()
         stm = select(model.Movie.gross).where(model.Movie.series_title == title)
         result = self.session.execute(stm).fetchall()
         return result
 
     def get_from_year(self, year):
-        title = title.title()
         stm = select(model.Movie).where(model.Movie.release_year > year)
         result = self.session.execute(stm).fetchall()
         return result
