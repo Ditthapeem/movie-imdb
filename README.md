@@ -5,8 +5,8 @@ IMDB Dataset of top 100 movies and tv shows.
 | Series_Title | IMDB_ID | Released_Year | Runtime | Genre | Overview | Director | Star1 | Star2 | Star3 | Star4 | Gross |
 |--------------|---------|---------------|---------|-------|----------|----------|-------|-------|-------|-------|-------|
 
-1. Series_Title = Name of the movie
-2. IMDB_ID = ID of IMDB
+1. Series_Title - Name of the movie
+2. IMDB_ID - ID of IMDB
 3. Released_Year - Year at which that movie released
 4. Runtime - Total runtime of the movie
 5. Genre - Genre of the movie
@@ -19,7 +19,7 @@ IMDB Dataset of top 100 movies and tv shows.
 | IMDB_ID | IMDB_Rating | Meta_score | No_of_Votes | Certificate | Poster_Link |
 |---------|-------------|------------|-------------|-------------|-------------|
 
-1. IMDB_ID = ID of IMDB
+1. IMDB_ID - ID of IMDB
 2. IMDB_Rating - Rating of the movie at IMDB site
 3. Meta_score - Score earned by the movie
 4. No_of_votes - Total number of votes
@@ -35,3 +35,9 @@ IMDB Dataset of top 100 movies and tv shows.
         sqlite3> .mode csv
         sqlite3> .import --skip 1 data/top_100_imdb_data.csv IMDB
         sqlite3> .import --skip 1 data/top_100_movie_data.csv movie
+        
+# UML Class Diagram
+(../../wiki/uml)
+
+# Package Diagram
+(../../wiki/package-diagram)
