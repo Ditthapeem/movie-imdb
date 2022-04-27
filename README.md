@@ -37,7 +37,7 @@ IMDB Dataset of top 100 movies and tv shows.
         sqlite3> .import --skip 1 data/top_100_movie_data.csv movie
         
 # UML Class Diagram
-[UML](../../wiki/UML Class Diagram)
+[UML](../../wiki/uml-class-diagram)
 
 # Package Diagram
 [Package Diagram](../../wiki/package-diagram)
