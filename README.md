@@ -41,3 +41,6 @@ IMDB Dataset of top 100 movies and tv shows.
 
 # Package Diagram
 [Package Diagram](../../wiki/package-diagram)
+
+# API 
+[API documentation](https://docs.google.com/document/d/1-Fz8Sp7Q4I1MeDKUyzjogXSRpLQ_BZGmHuK2lsHeEXQ/edit?usp=sharing)
